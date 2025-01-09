@@ -22,3 +22,4 @@ base_model.label(
 
 target_model = YOLOv8("yolov8n.pt")
 target_model.train("/kaggle/working/dataset-v1-labeled/data.yaml", epochs=200)
+target_model.save("yolov8n-frc-8816-2025-v1.pt")
